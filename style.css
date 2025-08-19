@@ -7,7 +7,8 @@
 
 body {
     display: flex;
-    flex-direction: column;
+    background-color: #1F2937;
+    align-items: center;
 }
 
 .text, 
@@ -18,14 +19,22 @@ body {
 
 .top-content {
     display: flex;
-    flex-direction: column;
     background-color: #1F2937;
+
 }
 
 .bottom-content {
     display: flex;
-    flex-direction: column;
+    background-color: #F9FAF8;
 }
+
+body,
+.top-content,
+.bottom-content {
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .logo {
     font-size: 24px;
@@ -40,13 +49,11 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #1F2937;
     color: #F9FAF8;
 }
@@ -71,11 +78,11 @@ button {
     background-color: #3882F6;
 }
 
+
+
 .call-to-action {
     display: flex;
     border-radius: 18px;
-    align-items: center;
-    justify-content: center;
     padding: 40px;
 }
 
@@ -84,10 +91,6 @@ button {
     color: white;
     border: white solid 1px;
     border-radius: 4px;
-}
-
-.bottom-content {
-    display: flex;
 }
 
 .images {
